@@ -1,0 +1,25 @@
+[project]
+name = "gps-animator"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Hannes",email = "h.gehrmann@campus.tu-berlin.de"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<4"
+dependencies = [
+    "numpy (>=2.3.2,<3.0.0)",
+    "manim (>=0.19.0,<0.20.0)",
+    "pyproj (>=3.7.2,<4.0.0)",
+    "termcolor (>=3.1.0,<4.0.0)",
+    "osmnx (>=2.0.6,<3.0.0)",
+    "contextily (>=1.6.2,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "gps_animator", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
